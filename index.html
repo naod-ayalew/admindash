@@ -7,11 +7,14 @@
     <title>Document</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Chivo:wght@200&family=Sanchez&display=swap');
+        </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="title"> <img src="images/dash.png" alt="">Dashboard</div>
+            <div id="hero"> <img src="images/dash.png" alt="">Dashboard</div>
             <ul>
                 <li><img src="images/card.png" alt="">Home</li>
                 <li><img src="images/check.png" alt="">Profile</li>
@@ -29,94 +32,127 @@
         </div>
 
         <div class="topline">
-            <div id="search"><img src="images/search.png" alt=""><input type="text" id="search-bar"></div>
-            <div id="alarm"><img src="" alt=""></div>
+            <div id="search"><img src="images/search.png" alt=""></div>
+            <input type="text" id="search-bar">
+            <div id="alarm"><img src="images/monitor.png" alt=""></div>
             <div class="avatar" id="smallavatar"><img src="images/man3.svg" alt="" class="avi"></div>
             <div id="full-name">Morgan Stanley Jr.</div>
         </div>
 
         <div class="secondline">
-            <div class="avatar"><img src="images/man3.svg" alt="" id="bigavi"></div>
+            <div class="avatar bigavi"><img src="images/man3.svg" id="bigavi"  ></div>
             <div>
                 <p id="greeting">Hi there,</p>
-                <p id="username"></p>
+                <h2 id="username"> Mabel (@Mabelina)</h2>
             </div>
+            <div></div>
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>
         </div>
 
         <div class="projects">
-            <div class="subheading">Your Projects</div>
+            <div class="subheader">Your Projects</div>
             <div class="project-cards">
-                <div class="card">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                          Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                          Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                          Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
                 </div>
-                <div class="card">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
-                    <img src="images/restart.png" alt="">
-                    <img src="images/settings.png" alt="">
-                    <img src="images/squiggle.png" alt="">
+                <div class="pcard">
+                    <h3> Fragile people read this</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.
+                    </p>
+                    <div class="logos">
+                        <img src="images/restart.png" alt="">
+                        <img src="images/settings.png" alt="">
+                        <img src="images/squiggle.png" alt="">
+                    </div>
+                    
                 </div>
             </div>
         </div>
 
         <div class="other">
             <div class="subheader">Announcements</div>
-            <div class="card">
+            <div class="card-other">
                 <div class="announcement">
-                    <p> Fragile people read this</p>
+                    <h3> Fragile people read this</h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                          Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio.</p>
                 </div>
                 <div class="announcement">
-                    <p> New policy on tardiness</p>
+                    <h3> New policy on tardiness</h3>
                     <p> Odio aenean sed adipiscing diam donec adipiscing
                          tristique risus nec. Orci eu lobortis elementum
                           nibh. Placerat orci nulla pellentesque dignissim.</p>
                 </div>
                 <div class="announcement">
-                    <p> For tomorrow  </p>
+                    <h3> For tomorrow  </h3>
                     <p> Libero enim sed faucibus turpis in eu mi.
                          Montes nascetur ridiculus mus mauris vitae ultricies leo. Pulvinar 
                          proin gravida hendrerit lectus a.</p>
@@ -124,13 +160,37 @@
             </div>
             
             <div class="subheader">Trending</div>
-            <div class="card trending">
+            <div class="card-avis">
                 <div class="avis">
                     <img src="images/man1.svg" class="avi" alt=""> </img>
-                    <p>So and so is trending </p>
-                <div><img src="images/woman2.svg" class="avi" alt="">So and so is trending</div>
-                <div><img src="images/man2.svg" class="avi" alt="">So and so is trending</div>
-                <div><img src="images/woman2.svg" class="avi" alt="">So and so is trending</div>
+                    <div>
+                        <h3 class="handles"> @Magic</h3>
+                        <p class="descrip">So and so is trending </p>   
+                    </div>
+                    
+                </div> 
+                <div class="avis"> 
+                    <img src="images/woman2.svg" class="avi" alt=""></img>
+                    <div>
+                        <h3 class="handles"> @Magic</h3>
+                        <p class="descrip">So and so is trending </p>   
+                    </div>
+                    
+                </div>
+                <div class="avis">
+                    <img src="images/man2.svg" class="avi" alt="">
+                    <div>
+                        <h3 class="handles"> @Magic</h3>
+                        <p class="descrip">So and so is trending </p>   
+                    </div>
+                </div>
+                <div class="avis">
+                    <img src="images/woman2.svg" class="avi" alt="">
+                    <div>
+                        <h3 class="handles"> @Magic</h3>
+                        <p class="descrip">So and so is trending </p>   
+                    </div>
+                </div>
             </div>     
         </div> 
     </div>

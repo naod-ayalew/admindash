@@ -1,13 +1,19 @@
+:root {
+    --background: rgb(72, 121, 255);
+}
 * {
     margin: 0;
 }
 body, html, .container{
     height: 100%;
+    background: lightgray;
+    font-family: 'Sanchez';
 }
 
 .container {
     display: grid;
-    grid-template: 60px 60px 1fr / 1fr 3fr 1fr;
+    grid-template: 1fr 1fr  / 1fr 3fr 1fr;
+ 
     grid-template-areas: 
     "sidebar topline topline"
     "sidebar secondline secondline"
@@ -15,43 +21,115 @@ body, html, .container{
 
 }
 
+.projects, .other {
+    background: rgb(243, 240, 240);
+}
+
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(219, 221, 240);
+    background-color: var(--background);
     color: rgb(22, 18, 18);
     display: grid;
+    color: white;
+    grid-template-rows: 15vh 35vh 35vh;
      
 }
+
+#hero {
+    font-size: 40px;
+    padding: 30px;
+
+}
+
 li {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 15% 30%;
+    font-size: 24px;
+}
+
+img {
+    vertical-align: center;
 }
 .topline {
     grid-area: topline;
     display: grid;
-    grid-template-columns: 60% 10% 10% 20%;
-    background: rgb(235, 133, 133);
+    grid-template-columns: 5% 65% 1fr 1fr 1fr 25px;
+    background-color: rgb(253, 253, 247);
+    align-items: center;
+    justify-items: center;
 }
 
 .secondline {
     grid-area: secondline;
     display: grid;
-    grid-template-columns: 10% 25% 29% 12% 12% 12%;
-    background: rgb(219, 221, 240);
+    gap: 12px;
+    grid-template-columns: 1fr 5fr repeat(4, minmax(75px, 200px));
+    background-color: rgb(253, 253, 247);
+    align-items: center;
+    box-shadow:rgb(209, 209, 193)
 }
 
+.bigavi {
+    justify-self: right;
+}
+
+input {
+    justify-self: left;
+    width: 70%; 
+    border-radius: 30px;
+    height: 2em;
+}
 .projects {
     grid-area: projects;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding: 30px;
+   
 }
 .project-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 50px ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px;
 }
+
+.subheader {
+    font-size: 22px;
+}
+
+.pcard {
+    display: grid;
+    background: white;
+    border: solid 2px white;
+    border-left: solid 1px goldenrod;
+    box-shadow: 3px 3px 3px 3px rgb(235, 235, 235);
+    padding: 25px;
+    box-sizing: border-box;
+    
+    grid-template-rows: 20% 60% 20%;
+    border-radius: 8%;
+    
+}
+
+.logos {
+    justify-self: right;
+}
+.card-other {
+    background: white;
+    border: solid 2px white;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 3px rgb(235, 235, 235)
+}
+
+
 .other {
     grid-area: other;
     display: grid;
     grid-template-rows: 30px 1fr 30px 1fr;
+    padding: 30px;
+    gap: 13px;
 }
 
 
@@ -84,27 +162,57 @@ img {
     width: 30px;
 }
 
-.trending {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+li {
+    min-width: 40px;
 }
+ 
 .avis {
-      display: inline-block;
-      grid-template-columns: 20% 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      
       
 }
 
-.announcement {
+.announcement  {
     border-bottom: solid gray 3px;
+    padding: 8px;
+   
+     
+}
+
+.card-avis {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+     
+    background-color: white;
+    border-radius: 8%;
+    box-shadow: 3px 3px 3px 3px rgb(235, 235, 235);
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+     
 }
 
 .announcement:nth-of-type(3) {
-    border:none;
-}
-.other .card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-around;
+    border-bottom:none;
+     
 }
 
+button {
+    border-radius: 30%;
+    height: 2em;
+    width: max(70px, 70%);
+    background: rgb(72, 121, 255);
+    color: white;
+    font-size: 22px;
+    border: none;
+    font-family: 'Chivo';
+    min-width: 100px;
+}
+
+.pcard h3 {
+    align-self: flex-end;
+    padding-bottom: 15px;
+    font-family: 'Antic Slab'
+}
+ 
