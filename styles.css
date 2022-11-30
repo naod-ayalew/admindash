@@ -17,33 +17,94 @@ body, html, .container{
 
 .sidebar {
     grid-area: sidebar;
+    background-color: rgb(219, 221, 240);
+    color: rgb(22, 18, 18);
+    display: grid;
+     
 }
-
+li {
+    list-style-type: none;
+}
 .topline {
     grid-area: topline;
+    display: grid;
+    grid-template-columns: 60% 10% 10% 20%;
+    background: rgb(235, 133, 133);
 }
 
 .secondline {
     grid-area: secondline;
+    display: grid;
+    grid-template-columns: 10% 25% 29% 12% 12% 12%;
+    background: rgb(219, 221, 240);
 }
 
 .projects {
     grid-area: projects;
 }
-
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
 .other {
     grid-area: other;
+    display: grid;
+    grid-template-rows: 30px 1fr 30px 1fr;
 }
 
 
 
 
 
-
+.card {
+    border: solid 2px black;
+}
 
 
 
 .avi {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: solid 3px purple;
+    background: radial-gradient(rgb(235, 133, 133), rgb(144, 144, 230));
+}
+#bigavi {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: solid 3px purple;
+    background: radial-gradient(rgb(235, 133, 133), rgb(144, 144, 230));
+}
+
+img {
     height: 30px;
     width: 30px;
 }
+
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.avis {
+      display: inline-block;
+      grid-template-columns: 20% 80%;
+      
+}
+
+.announcement {
+    border-bottom: solid gray 3px;
+}
+
+.announcement:nth-of-type(3) {
+    border:none;
+}
+.other .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
